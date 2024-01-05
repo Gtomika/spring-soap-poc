@@ -1,0 +1,18 @@
+server:
+  # SOAP service will take port 8080, have to use another one
+  port: 8085
+
+soap:
+  countries:
+    # SOAP service must be available here
+    # Working one can be found here: https://github.com/spring-guides/gs-producing-web-service/tree/main/complete
+    base-url: http://localhost:8080
+    path: /ws/countries
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.ws.client.MessageTracing.sent: DEBUG
+    org.springframework.ws.server.MessageTracing.sent: DEBUG
+    org.springframework.ws.client.MessageTracing.received: TRACE
+    org.springframework.ws.server.MessageTracing.received: TRACE
