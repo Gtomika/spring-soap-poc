@@ -1,4 +1,4 @@
-package org.poc.soap.client;
+package org.poc.soap;
 
 import lombok.extern.slf4j.Slf4j;
 import org.poc.soap.exception.CountryNotFoundException;

@@ -1,7 +1,6 @@
 package org.poc.soap.controller.response;
 
-import org.poc.soap.wsdl.Country;
-import org.poc.soap.wsdl.GetCountryResponse;
+import org.poc.soap.CountryModel;
 
 public record GetCountryRestResponse(
         String name,
@@ -10,12 +9,12 @@ public record GetCountryRestResponse(
         String currency
 ) {
 
-    public static GetCountryRestResponse from(Country country) {
+    public static GetCountryRestResponse from(CountryModel country) {
         return new GetCountryRestResponse(
-                country.getName(),
-                country.getPopulation(),
-                country.getCapital(),
-                country.getCurrency().value()
+                country.name(),
+                country.population(),
+                country.capital(),
+                country.currency()
         );
     }
 

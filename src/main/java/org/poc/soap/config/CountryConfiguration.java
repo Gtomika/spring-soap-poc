@@ -1,6 +1,6 @@
 package org.poc.soap.config;
 
-import org.poc.soap.client.CountryClient;
+import org.poc.soap.CountryClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
